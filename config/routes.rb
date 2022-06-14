@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       #we get musify/login to login controller, spotify auth action
       get '/login', to: 'login#spotify_auth'
+      get '/auth', to: 'login#authorized_user'
     end 
   end
 end

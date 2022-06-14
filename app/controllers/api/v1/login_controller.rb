@@ -10,4 +10,10 @@ class Api::V1::LoginController < ApplicationController
         url = 'https://accounts.spotify.com/authorize/'
         redirect_to "#{url}?#{query_params.to_query}"
     end
+
+    def authorized_user
+        render json: {
+            username: current_user.username,
+        }
+    end
 end
