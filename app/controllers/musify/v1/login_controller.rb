@@ -1,4 +1,4 @@
-class Api::V1::LoginController < ApplicationController
+class Musify::V1::LoginController < ApplicationController
     def spotify_auth
         query_params = {
             client_id: ENV['SPOTIFY_CLIENT_KEY'],

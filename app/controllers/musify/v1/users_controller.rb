@@ -1,4 +1,4 @@
-class Api::V1::UsersController < ApplicationController
+class musify::V1::UsersController < ApplicationController
     def create
         # this will help us get the access codes
         body = {
